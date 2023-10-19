@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li {
+  list-style-type: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+
+:root {
+  --bgColor: #E0E0E0;
+  --descriptionColor: #757575;
+  --black: #000000;
+  --turquoise: #2B788B;
+  --lightTurquoise: #C3DCE3;
+  --bg2Color: #FFFFFF;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.description {
+  color: var(--descriptionColor);
+  font-weight: 18px;
+  font-weight: 600;
+}
+
+
+.title {
+  font-weight: 400px;
+  font-size: 48px;
+  font-family: 'Dela Gothic One', sans-serif;
+  color: var(--black);
+}
+
+
+.subtitle {
+  font-weight: 700px;
+  font-size: 16px;
+  color: var(--turquoise);
+}
+
+
+.button {
+  font-weight: 700px;
+  font-size: 16px;
+  border-radius: 40px;
+  padding: 14px 22px;
 }

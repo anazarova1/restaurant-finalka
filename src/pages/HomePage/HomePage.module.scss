@@ -1,0 +1,105 @@
+.platform {
+    display: flex;
+    justify-content: space-between;
+    padding: 94px 0;
+
+    .platform__content {
+        width: 80%;
+
+        .platform__description {
+            width: 65%;
+        }
+
+        .platform__title {
+            font-size: 50px;
+            padding: 24px 0 30px;
+        }
+
+        .platform__description {
+            padding-bottom: 32px;
+        }
+
+        .platform__button {
+            background-color: var(--lightTurquoise);
+            border: none;
+
+            .platform__buttonLink {
+                color: var(--turquoise);
+                font-weight: 700;
+                font-size: 16px;
+            }
+        }
+
+        .platform__indicators {
+            padding-top: 48px;
+        }
+
+        .platform__indicatorsContent {
+            display: flex;
+            column-gap: 97px;
+
+            .platform__graduatesQuantity {
+                display: flex;
+                align-items: center;
+                column-gap: 7px;
+
+                .platform__graduatesNumber {
+                    display: flex;
+                    align-items: center;
+
+                    .platform__graduatesPlus {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            .platform__graduatesIcon {
+                font-size: 30px;
+            }
+
+            .platform__graduatesQuantity p {
+                font-weight: 800;
+                font-size: 40px;
+            }
+        }
+    }
+}
+
+.platform__img {
+    width: 670px;
+    padding-top: 50px;
+}
+
+
+.platform__text {
+    font-weight: 600px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.learn {
+    padding-top: 40px ;
+    width: 95%;
+}
+
+.learn__content {
+    display: flex;
+    column-gap: 90px;
+
+    .content {
+        height: 200px;
+        width: 210px;
+        color: #fff;
+        line-height: 160px;
+        text-align: center;
+        background-color: #364d79;
+    }
+}
+
+.learn__description {
+    padding: 30px 0;
+}
+
+.learn__text {
+    width: 45%;
+}

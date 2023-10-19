@@ -1,0 +1,25 @@
+.entrance{
+    position: fixed;
+    background-color: rgb(175, 175, 221);
+    display: flex;
+    z-index: 20;
+    right: 2%;
+    margin-top: 1%;
+    .display{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        justify-content: center;
+        align-self: center;
+        gap: 10px;
+        text-align: center;
+        border: 2p solid black;
+        
+        margin: 2%;
+    button{
+        background-color: rgb(59, 91, 235);
+        color: black;
+    }
+    }
+    
+}
