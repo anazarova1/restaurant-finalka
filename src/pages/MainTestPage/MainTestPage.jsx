@@ -4,6 +4,7 @@ const MainTestPage = () => {
     return (
         <div>
             cart
+            added Zadachi Aidany
         </div>
     );
 };
