@@ -2,6 +2,7 @@ import { Outlet } from 'react-router';
 import styles from './layout.module.scss';
 import { useEffect } from "react";
 import { Header } from '../../../components/Header/header';
+import '../../../i18n'
 
 export const Layout = ({ children }) => {
 

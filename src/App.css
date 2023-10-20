@@ -59,14 +59,27 @@ li {
   font-size: 16px;
   border-radius: 40px;
   padding: 14px 22px;
+  background-color: var(--lightTurquoise);
+  color: var(--turquoise);
+  border: none;
 }
 
-.slick-slider .slick-initialized{
+
+button:hover{
+  border: 2px solid var(--turquoise);
+  background-color: transparent;
+  transition: 0.5s;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.slick-slider .slick-initialized {
   width: 200px;
   height: 200px;
 }
 
 
-svg{
+svg {
   color: var(--turquoise);
 }
+

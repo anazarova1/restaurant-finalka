@@ -10,6 +10,8 @@
     .header__logo {
       width: 110px;
       height: 80px;
+      background-color: transparent;
+      color: black;
     }
 
     .header__nav {
@@ -38,7 +40,7 @@
         filter: blur(0.5px);
       }
 
-      .header__buttons{
+      .header__buttons {
         display: flex;
         gap: 20px;
 
@@ -54,5 +56,34 @@
 
   .header__nav {
     display: flex;
+    width: 40%;
   }
 }
+
+
+.langContent {
+  cursor: pointer;
+  color: var(--black)
+}
+
+
+.langContent:hover {
+  color: var(--turquoise);
+  transition: .5s;
+  font-weight: 500;
+}
+
+
+.langContent p:active {
+  color: var(--turquoise);
+  transition: .5s;
+  font-weight: 500;
+}
+
+
+.lang {
+  display: flex;
+  column-gap: 20px;
+}
+
+

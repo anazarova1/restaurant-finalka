@@ -13,11 +13,8 @@ import { BiLogoJava } from "react-icons/bi"
 import { DiJavascript } from "react-icons/di"
 import improveImage from "../../images/HomeImages/improve.png"
 import watchImage from "../../images/HomeImages/watch.png"
-
-
-
-
-
+import javaImage from "../../images/HomeImages/java.svg"
+import pythonSvg from "../../images/HomeImages/pythonSvg.svg"
 
 export const HomePage = () => {
     return (
@@ -97,11 +94,13 @@ export const HomePage = () => {
                                         <p className={`${styles.learnIcons__description} ${styles.php}`}>PHP</p>
                                     </div>
                                     <div className={styles.learnIcons}>
-                                        <DiPython className={styles.PythonSvg}  />
+                                        {/* <DiPython className={styles.PythonSvg} /> */}
+                                        <img className={styles.PythonSvg} src={pythonSvg} alt="" />
                                         <p className={`${styles.learnIcons__description} ${styles.python}`}>Python</p>
                                     </div>
                                     <div className={styles.learnIcons}>
-                                        <BiLogoJava  className={styles.JavaSvg} />
+                                        {/* <BiLogoJava  className={styles.JavaSvg} /> */}
+                                        <img className={styles.JavaSvg} src={javaImage} alt="" />
                                         <p className={`${styles.learnIcons__description} ${styles.java}`}>Java</p>
                                     </div>
                                     <div className={styles.learnIcons}>
@@ -155,9 +154,7 @@ export const HomePage = () => {
                 </div>
             </section>
 
-            <section>
-                
-            </section>
+           
         </div>
     );
 };

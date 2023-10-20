@@ -1,3 +1,28 @@
 {
-    
+    "books": [
+        {
+            "id": 1,
+            "name": "string",
+            "slug": "gTPYTr9Dgy4IUrzNAw5jV9BF5FAkiXKtMEI-ctUS",
+            "image": "string",
+            "book": "string",
+            "description": "string",
+            "author": "string",
+            "data": "2023-10-20",
+            "created": "2023-10-20T11:40:47.264Z",
+            "course": 0
+          },
+          {
+            "id": 2 ,
+            "name": "string",
+            "slug": "gTPYTr9Dgy4IUrzNAw5jV9BF5FAkiXKtMEI-ctUS",
+            "image": "string",
+            "book": "string",
+            "description": "string",
+            "author": "string",
+            "data": "2023-10-20",
+            "created": "2023-10-20T11:40:47.264Z",
+            "course": 0
+          }
+       ]
 }
