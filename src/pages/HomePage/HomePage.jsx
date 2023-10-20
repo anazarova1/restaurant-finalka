@@ -7,7 +7,13 @@ import { Link } from 'react-router-dom';
 import platformImage from "../../images/HomeImages/platform2.png"
 import learnImage from "../../images/HomeImages/learn.png"
 import { Carousel } from 'antd';
-import youtubeImage from "../../images/HomeImages/youtube.png"
+import { SiPhp } from "react-icons/si"
+import { DiPython } from "react-icons/di"
+import { BiLogoJava } from "react-icons/bi"
+import { DiJavascript } from "react-icons/di"
+import improveImage from "../../images/HomeImages/improve.png"
+import watchImage from "../../images/HomeImages/watch.png"
+
 
 
 
@@ -16,20 +22,25 @@ import youtubeImage from "../../images/HomeImages/youtube.png"
 export const HomePage = () => {
     return (
         <div className={styles.home}>
-            <div className="container platformContainer">
-                <div className={styles.home__content}>
-                    <section className={styles.platform}>
+            <section className={styles.platform}>
+                <div className="container">
+                    <div className={styles.platform__wrapper}>
                         <div className={styles.platform__content}>
                             <h3 className={`${styles.platform__subtitle} subtitle`}>IT-COURSES PLATFORM</h3>
                             <h1 className={`${styles.platform__title} title`}>Learning and
                                 teaching online,
                                 made easy.</h1>
-                            <p className={`${styles.platform__description} description`}>Practice your Skills and learn new things with IT-Academy.</p>
+                            <p className={`${styles.platform__description} description`}>Practice your Skills and learn coding with IT-Academy.</p>
+
+                            {/* <div className={styles.btnwrapper}>
+                                <Link className={styles.animation} href="">
+                                    <span>Courses</span>
+                                    <div className={styles.liquid}></div>
+                                </Link>
+                            </div> */}
 
                             <button className={`${styles.platform__button} button`}>
-                                <Link to="/courses" className={`${styles.platform__buttonLink} buttonLink`}>
-                                    About courses
-                                </Link>
+                                <Link to="/courses" className={`${styles.platform__buttonLink} buttonLink`}>About courses</Link>
                             </button>
 
                             <div className={styles.platform__indicators}>
@@ -64,43 +75,87 @@ export const HomePage = () => {
                         <div>
                             <img className={styles.platform__img} src={platformImage} alt="" />
                         </div>
-                    </section>
+                    </div>
+                </div>
+            </section>
 
+            <section className={styles.learn}>
+                <div className="container">
+                    <div className={styles.learn__content}>
+                        <div>
+                            <img className={styles.learImage} src={learnImage} alt="image" />
+                        </div>
 
-                    <section className={styles.learn}>
-                        <div className="container">
-                            <div className={styles.learn__content}>
-                                <div>
-                                    <img src={learnImage} alt="image" />
-                                </div>
+                        <div className={styles.learn__text}>
+                            <h2 className={`${styles.learn__title} title`}>What you will learn in courses</h2>
+                            <p className={`${styles.learn__description} description`}>Progress independently by looking for additionally  information </p>
 
-                                <div className={styles.learn__text}>
-                                    <h2 className={`${styles.learn__title} title`}>Use this platforms to learn more</h2>
-                                    <p className={`${styles.learn__description} description`}>Progress independently by looking for additionally  information </p>
-
-                                    <div className={styles.carouselBlock}>
-                                        <Carousel style={{ width: 700, height: 700 }} autoplay>
-                                            <div>
-                                                
-                                                <img className={styles.content} src="https://i.pinimg.com/564x/6b/bf/1e/6bbf1e4b5d3fc6c5bb114009380555ca.jpg" alt="" />
-                                            </div>
-                                            <div>
-                                                <img className={styles.content} src="https://i.pinimg.com/564x/90/e1/f3/90e1f38590c46f729b97cf9fd6efa9b7.jpg" alt="" />
-                                            </div>
-                                            <div>
-                                                <img className={styles.content} src="https://i.pinimg.com/564x/6b/bf/1e/6bbf1e4b5d3fc6c5bb114009380555ca.jpg" alt="" />
-                                            </div>
-                                            <div>
-                                                <img className={styles.content} src="https://i.pinimg.com/564x/90/e1/f3/90e1f38590c46f729b97cf9fd6efa9b7.jpg" alt="" />
-                                            </div>
-                                        </Carousel>
+                            <div className={styles.carouselBlock}>
+                                <Carousel style={{ width: 200, height: 200 }} autoplay>
+                                    <div className={styles.learnIcons}>
+                                        <SiPhp className={styles.PhpSvg} />
+                                        <p className={`${styles.learnIcons__description} ${styles.php}`}>PHP</p>
                                     </div>
-                                </div>
+                                    <div className={styles.learnIcons}>
+                                        <DiPython className={styles.PythonSvg}  />
+                                        <p className={`${styles.learnIcons__description} ${styles.python}`}>Python</p>
+                                    </div>
+                                    <div className={styles.learnIcons}>
+                                        <BiLogoJava  className={styles.JavaSvg} />
+                                        <p className={`${styles.learnIcons__description} ${styles.java}`}>Java</p>
+                                    </div>
+                                    <div className={styles.learnIcons}>
+                                        <DiJavascript className={styles.JsSvg} />
+                                        <p className={`${styles.learnIcons__description} ${styles.javascript}`}>JavaScript</p>
+                                    </div>
+                                </Carousel>
                             </div>
                         </div>
-                    </section>
+                    </div>
                 </div>
-            </div>
+            </section>
+
+            <section className={styles.improveSkills}>
+                <div className="container">
+                    <div className={styles.improveSkills__content}>
+                        <div className={styles.improveSkills__text}>
+                            <h2 className={`${styles.improveSkills__title} title`}>Improve your skills</h2>
+                            <p className={`${styles.improveSkills__description} description`}>Traditional and new effective approaches to word study</p>
+                            {/* <div className={styles.btnwrapper}>
+                                <Link className={styles.animation} href="">
+                                    <span>button</span>
+                                    <div className={styles.liquid}></div>
+                                </Link>
+                            </div> */}
+                            <button className={`${styles.improveSkills__button} button`}>
+                                <Link to="/courses" className={`${styles.improveSkills__buttonLink} buttonLink`}>About courses</Link>
+                            </button>
+                        </div>
+                        <div>
+                            <img className={styles.improveSkills__img} src={improveImage} alt="image" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className={styles.watch}>
+                <div className="container">
+                    <div className={styles.watch__content}>
+                        <div>
+                            <img className={styles.watch___img} src={watchImage} alt="image" />
+                        </div>
+                        <div className={styles.watch___text}>
+                            <h2 className={`${styles.watch___title} title`}>Watch your progress every day</h2>
+                            <p className={`${styles.watch___description} description`}>Save statistics on your achievements, words learned, and mistakes</p>
+                            <button className={`${styles.watch__button} button`}>
+                                <Link to="/courses" className={`${styles.watch__buttonLink} buttonLink`}>About courses</Link>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 };
+
+

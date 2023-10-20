@@ -60,3 +60,13 @@ li {
   border-radius: 40px;
   padding: 14px 22px;
 }
+
+.slick-slider .slick-initialized{
+  width: 200px;
+  height: 200px;
+}
+
+
+svg{
+  color: var(--turquoise);
+}

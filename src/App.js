@@ -23,7 +23,6 @@ function App() {
             <Route path="/singup" element={<SingUp />} />
           </Route>
         </Routes>
-
       </>
     );
   }
