@@ -1,24 +1,69 @@
-.entrance{
-    position: fixed;
-    background-color: rgb(175, 175, 221);
+.form_styles_row{
     display: flex;
-    z-index: 20;
-    right: 2%;
-    margin-top: 1%;
-    .display{
+    justify-content: center;
+    background-color: #E0E0E0;
+    gap: 10px;
+    .form_style{
+        margin-top: 3%;
         display: flex;
         flex-direction: column;
-        width: 400px;
-        justify-content: center;
-        align-self: center;
-        gap: 10px;
-        text-align: center;
-        border: 2p solid black;
-        margin: 2%;
-    button{
-        background-color: rgb(59, 91, 235);
-        color: black;
-    }
-    }
+        gap: 13px;
+        
+        input{
+            padding: 15px;
+            width: 250px;
+            border-radius: 12px;
+            background: rgb(100, 100, 100) radial-gradient(circle at 0 0, rgba(199, 219, 236, 0.65), rgba(255, 255, 255, .35));
+            box-shadow:
+                inset rgba(0, 0, 0, .4) -3px -3px 8px,
+                inset rgba(255, 255, 255, .5) 3px 3px 8px,
+                rgba(0, 0, 0, .8) 4px 4px 8px -3px;
+            border: none;
+            outline: 0 !important;position: relative;
     
-}
+             &:hover {
+                    background: rgb(95, 113, 136) radial-gradient(circle at 0 0, rgba(199, 219, 236, 0.65), rgba(255, 255, 255, .35));
+                    box-shadow:
+                        inset rgba(0, 0, 0, .4) -3px -3px 8px,
+                        inset rgba(255, 255, 255, .5) 3px 3px 8px,
+                        rgba(0, 0, 0, .8) 8px 8px 8px -3px;
+                }
+        }
+        button {
+            width: 150px;
+            margin: 2% 2%;
+            padding: 5px 15px;
+            border: blue;
+            border-radius: 12px;
+            right: 0;
+            background: rgb(95, 113, 136) radial-gradient(circle at 0 0, rgba(199, 219, 236, 0.65), rgba(255, 255, 255, .35));
+            box-shadow:
+                inset rgba(0, 0, 0, .4) -3px -3px 8px,
+                inset rgba(83, 107, 211, 0.5) 3px 3px 8px,
+                rgba(0, 0, 0, .8) 3px 3px 8px -3px;
+        
+            &:hover {
+                background: rgb(65, 113, 201) radial-gradient(circle at 0 0, rgba(199, 219, 236, 0.65), rgba(95, 144, 216, 0.35));
+                box-shadow:
+                    inset rgba(0, 0, 0, .4) -3px -3px 8px,
+                    inset rgba(83, 107, 211, 0.5) 3px 3px 8px,
+                    rgba(0, 0, 0, .8) 6px 6px 8px -3px;
+            }}
+          
+            .flex_row{
+                display: flex;
+                justify-content: center;
+                position: relative;
+                .icon{
+                    right: 15px;
+                    top: 12px;
+                    position: absolute;
+                }
+            }
+    
+        }
+        .img{
+            margin-top: 4%;
+            width: 300px;
+        }
+    }
