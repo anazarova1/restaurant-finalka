@@ -11,14 +11,14 @@ export const Entrance = () => {
     const [eye, setEye] = useState(false)
     const dispatch = useDispatch();
     const navigate = useNavigate();
-    const { userInfo } = useSelector(state => state.user);
+    // const { userInfo } = useSelector(state => state.user);
     const { register, handleSubmit } = useForm();
 
     const onSubmit = (values) => {
         dispatch(login(values))
-        if (userInfo!== null) {
-            navigate("/personalPage");
-        }
+        // if (userInfo!== null) {
+        //     navigate("/personalPage");
+        // }
         console.log(values);
     }
 

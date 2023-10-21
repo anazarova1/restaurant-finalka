@@ -77,7 +77,7 @@ export const Header = () => {
               <Link className={styles.header__btn} to="/entrance">Login</Link>
             </div>
             <div>
-              <Link className={styles.header__btn} to="/entrance">Sign up</Link>
+              <Link className={styles.header__btn} to="/singup">Sign up</Link>
             </div>
           </div>
           
