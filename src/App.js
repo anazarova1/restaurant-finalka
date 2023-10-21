@@ -8,6 +8,7 @@ import { Entrance } from './pages/Entrance/entrance';
 import { Reviews } from './pages/reviews/reviews';
 import { SingUp } from './pages/singup/singup';
 import { HomePage } from './pages/HomePage/HomePage'
+import { PersonalPage } from './pages/personalPage/personalPage';
 
 function App() {
     return (
@@ -21,6 +22,8 @@ function App() {
             <Route path="/graduate" element={<PageGr />} />
             <Route path="/entrance" element={<Entrance />} />
             <Route path="/singup" element={<SingUp />} />
+            <Route path="/personalPage" element={<PersonalPage />} />
+
           </Route>
         </Routes>
       </>
