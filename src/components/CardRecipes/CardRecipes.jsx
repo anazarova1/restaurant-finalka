@@ -37,10 +37,8 @@ export const CardRecipes = (props) => {
                                 <div>
                                     <h3>Список ингридиентов:</h3>
                                     <p>{props.ingredients}</p>
-                                    <br></br>
                                 </div>
                             </div>
-                            <h2></h2>
                             <div className={styles.card_marker}>
                                 <div className={styles.icons}>
                                     <GiCook></GiCook>
@@ -68,6 +66,7 @@ export const CardRecipes = (props) => {
                             </div>
                         </Card>
                     </div>
+                  
                 </div>
             </div>
         </>

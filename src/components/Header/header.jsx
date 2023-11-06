@@ -30,7 +30,7 @@ export const Header = () => {
       <div className="container">
         <div className={styles.header__content}>
           <div className={styles.flex}>
-          <Link to="/slider" ><img className={styles.header__logo} src={logo} alt="logo" /></Link>
+          <Link to="/main" ><img className={styles.header__logo} src={logo} alt="logo" /></Link>
           <div className={styles.marker}>
             <LiaMapMarkerSolid></LiaMapMarkerSolid>
           <p>Бишкек</p>

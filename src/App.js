@@ -8,6 +8,7 @@ import { Banquets } from './pages/Banquets/banquets';
 import { Recipes } from './pages/Recipes/recipes';
 import { Slider } from './components/Slider';
 import { Restaurants } from './pages/Restaurants/restaurants';
+import { Main } from './components/Main/main';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Route path="/banquets" element={< Banquets/>} />
             <Route path="/restaurants" element={< Restaurants />} />
             <Route path='/slider' element={<Slider />}/>
+            <Route path='/main' element={<Main />}/>
             <Route path="/news" element={<News />} />
             <Route path="/login" element={<Login />} />
             <Route path="/singup" element={<SingUp />} />

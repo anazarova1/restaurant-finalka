@@ -1,4 +1,10 @@
 {
-    "users": [
-    ]
+  "users": [
+    {
+      "email": "qwe@gmail.com",
+      "password": "$2a$10$brk6LDbXXxQQPzqP.LS2QewQBDcLOWOwFCg1fwSIBnrrv8JfLccuO",
+      "username": "Aidana Nazarova ",
+      "id": 1
+    }
+  ]
 }
