@@ -1,4 +1,16 @@
 {
-    "users": [
-    ]
+  "users": [
+    {
+      "email": "testuser1.1@gmail.com",
+      "password": "$2a$10$.UkZ1ixgQNKZ.f3ITz8R8usNAjguR60uiBnfL/ookcu8hM77oTEay",
+      "username": "testaidana",
+      "id": 1
+    },
+    {
+      "email": "qwe@gmail.com",
+      "password": "$2a$10$O2l00yoD8Ur07MYczlN07eRl.MhG4j/w2MFd5TuiW6CTDa4KhAyB6",
+      "username": "Aidana Nazarova ",
+      "id": 2
+    }
+  ]
 }
