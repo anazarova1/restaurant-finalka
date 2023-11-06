@@ -1,8 +1,3 @@
-import { configureStore } from "@reduxjs/toolkit";
-import coursesSlice from "./coursesSlice";
-
-export const store = configureStore({
-    reducer: {
-        products: coursesSlice
-    }
-})
+export * from "./store"
+export * from "./slices"
+export * from "./actions"
