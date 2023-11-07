@@ -2,7 +2,7 @@
     justify-content: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: auto;
+    margin:50px auto;
     align-items: center;
     height: 530px;
     z-index: 20;
@@ -37,19 +37,21 @@
     }
 
     .cardContainer {
-        width: 300px;
+        width: 500px;
         border: 2px solid rgb(82, 77, 74);
         border-radius: 10px;
         -webkit-box-shadow: 5px 5px 5px -5px rgba(146, 98, 53, 0.6);
         -moz-box-shadow: 5px 5px 5px -5px rgba(146, 98, 53, 0.6);
         box-shadow: 7px 7px 7px -5px rgba(146, 98, 53, 0.6);
-    }
-
+    
+.props_name{
+font-size: 30px;
+}
     .card_img {
-        width: 296px;
-        height: 220px;
+        width: 496px;
+        height: 320px;
     }
-
+    }
 
 }
 
@@ -73,5 +75,12 @@
 
 .card_marker {
     display: flex;
-
+    align-self:self-end;
+    h2{
+        text-align:end;
+    }
+.card_icons{
+width: 40px;
+height: 40px;
+}
 }
