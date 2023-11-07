@@ -9,6 +9,7 @@ import { Recipes } from './pages/Recipes/recipes';
 import { Slider } from './components/Slider';
 import { Restaurants } from './pages/Restaurants/restaurants';
 import { Main } from './components/Main/main';
+import { Search } from './components/Search/Search';
 
 
 function App() {
@@ -24,6 +25,8 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/singup" element={<SingUp />} />
             <Route path="/recipes" element={<Recipes />} />
+            <Route path="/search" element={<Search/>} />
+           
 
           </Route>
         </Routes>

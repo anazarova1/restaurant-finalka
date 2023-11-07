@@ -29,19 +29,23 @@ export const CardResto = (props) => {
     const handleCancel = () => {
         setOpen(false);
     };
+
+    
     return (
         <>
             <div className='container'>
                 <div className={styles.cards}>
                     <div className={styles.cardContainer}>
                         <Card className={styles.card}
+
+
                             hoverable cover={<img className={styles.card_img} src={props.image} alt="Картинка" />}>
                             <h2>{props.name}</h2>
                             <div className={styles.card_marker}>
                                 <div >
                                     <LiaMapMarkerSolid></LiaMapMarkerSolid>
                                 </div>
-                                <p>{props.adres}</p>
+                                <p>{props.address}</p>
                             </div>
                             <div className={styles.card_marker}>
                                 <div>
@@ -87,7 +91,7 @@ export const CardResto = (props) => {
 
                                         dateFormat="MMMM d, yyyy h:mm aa" />
                                     {/* <BsPeople></BsPeople> */}
-                                    <input type='number' placeholder= 'Количество гостей' />
+                                    <input type='number' placeholder='Количество гостей' />
                                     <input type='name' placeholder='Имя' />
                                     <input type='name' placeholder='Фамилия' />
                                     <input type='text' placeholder='Телефон' />
@@ -99,6 +103,19 @@ export const CardResto = (props) => {
                         </Card>
                     </div>
                 </div>
+
+
+
+                <div>
+                    {/* {restaurants.map((restaurant) => (
+                        <div key={restaurant.id}>
+                            <p>{restaurant.id}</p>
+                            <h2>{restaurant.name}</h2>
+                        </div>
+                    ))}    */}
+               </div>
+
+
             </div>
 
         </>
