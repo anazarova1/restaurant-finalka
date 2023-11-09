@@ -9,6 +9,10 @@ import { Button, Modal } from 'antd';
 import { BsPeople } from "react-icons/bs"
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
+import { postReserv } from '../../store/actions';
+import { useForm } from 'react-hook-form';
+import { useDispatch } from 'react-redux';
+import { PrivateRoute } from '../../shared/privateRoute/PrivateRoute';
 
 export const CardResto = (props) => {
     const [startDate, setStartDate] = useState(new Date())
@@ -30,7 +34,14 @@ export const CardResto = (props) => {
         setOpen(false);
     };
 
-    
+    const {register, handleSubmit} = useForm()
+    const dispatch = useDispatch()
+    console.log(props);
+
+    const onSubmit = (reserv) => {
+        dispatch(postReserv({...reserv, name: props.name, address: props.adres}))
+
+    }
     return (
         <>
             <div className='container'>
@@ -62,7 +73,7 @@ export const CardResto = (props) => {
                                 </p>
                             </div>
                             <div className={styles.card_button_flex}>
-                                <button className={styles.card_button} type="primary" onClick={showModal}
+                                <button className={styles.submit_button} type="primary" onClick={showModal}
                                 >Забронировать
                                 </button>
                             </div>
@@ -71,19 +82,15 @@ export const CardResto = (props) => {
                                 title="Бронирование столика"
                                 onOk={handleOk}
                                 onCancel={handleCancel}
-                                footer={[
-                                    <Button key="submit" type="primary" loading={loading} onClick={handleOk}>
-                                        Submit
-                                    </Button>
-                                ]}>
+                                footer={[]}>
                                 <h2>{props.name}</h2>
                                 <div className={styles.card_marker}>
                                     <div>
                                         <LiaMapMarkerSolid></LiaMapMarkerSolid>
                                     </div>
-                                    <p>{props.adres}</p>
+                                    <p>{props.address}</p>
                                 </div>
-                                <div className={styles.calendar}>
+                                <form onSubmit={handleSubmit(onSubmit)} className={styles.calendar}>
                                     <DatePicker
                                         selected={startDate}
                                         onChange={(date) => setStartDate(date)}
@@ -91,14 +98,17 @@ export const CardResto = (props) => {
 
                                         dateFormat="MMMM d, yyyy h:mm aa" />
                                     {/* <BsPeople></BsPeople> */}
-                                    <input type='number' placeholder='Количество гостей' />
-                                    <input type='name' placeholder='Имя' />
-                                    <input type='name' placeholder='Фамилия' />
-                                    <input type='text' placeholder='Телефон' />
-                                    <input type='email' placeholder='email' />
+                                    
+                                    <input type='number' placeholder='Количество гостей' {...register("count")} />
+                                    <input type='name' placeholder='Имя' {...register("name")}/>
+                                    <input type='name' placeholder='Фамилия' {...register("surname")}/>
+                                    <input type='text' placeholder='Телефон' {...register("number")}/>
                                     <p>Пожелания к брони</p>
                                     <input className={styles.calendar_big_input} type='text' placeholder='' />
-                                </div>
+                                    <PrivateRoute>
+                                    <button  type='submit' className={styles.submit_button} loading={loading}>Submit</button>
+                                    </PrivateRoute>
+                                    </form>   
                             </Modal>
                         </Card>
                     </div>
@@ -106,14 +116,7 @@ export const CardResto = (props) => {
 
 
 
-                <div>
-                    {/* {restaurants.map((restaurant) => (
-                        <div key={restaurant.id}>
-                            <p>{restaurant.id}</p>
-                            <h2>{restaurant.name}</h2>
-                        </div>
-                    ))}    */}
-               </div>
+         
 
 
             </div>

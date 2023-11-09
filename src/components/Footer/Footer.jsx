@@ -1,11 +1,16 @@
-import React from 'react';
+import styles from "./Footer.module.scss"
 
-const Footer = () => {
+import { MyMapComponent } from "../Map/map"
+
+export const Footer = () => {
+
     return (
-        <div>
-            <h2>footer</h2>
-        </div>
-    );
-};
+        <>
+            <div className={styles.bg}>
 
-export default Footer;
+            <MyMapComponent/>
+
+            </div>
+        </>
+    )
+}

@@ -1,9 +1,7 @@
-
-
 .carousel_content {
     margin-top: 15px;
     height: 550px;
-    background-color:#436068;
+    background-color: #436068;
     border-radius: 10px;
     line-height: 160px;
     align-items: center;
@@ -12,13 +10,13 @@
     margin: auto;
 
     .carousel_flex {
-    
+
         align-items: center;
         justify-content: center;
         position: relative;
         margin-bottom: 15px;
 
-        .carousel_title{
+        .carousel_title {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -32,9 +30,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            border-radius: 10px;
-            img{
-                border-radius: 10px;
+
+            img {
+                border-radius: 10px 10px 0 0;
 
             }
         }

@@ -1,10 +1,13 @@
 import { Outlet } from 'react-router';
 import styles from './layout.module.scss';
 import { useEffect } from "react";
-import { Header } from '../../../components/Header/header';
-import '../../../i18n'
 
-export const Layout = ({ children }) => {
+
+import '../../../i18n'
+import { Footer, Header } from '../../../components';
+
+
+export const Layout = () => {
 
         useEffect(() => {
             window.scrollTo(0,0);
@@ -13,6 +16,8 @@ export const Layout = ({ children }) => {
         <div className={styles.layout}>
             <Header />
             <Outlet />
+            <Footer/>
+           
         </div>
     );
 };

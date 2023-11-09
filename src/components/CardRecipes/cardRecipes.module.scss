@@ -1,50 +1,50 @@
-.cards {
-justify-content: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: auto;
-    align-items: center;
+.card_recipes {
     height: 530px;
     z-index: 20;
-border-radius: 10px;
-line-height: 160px;
-width: 84%;
-margin:30px auto ;
-    .card_recipes {
-        width: 300px;
-        border: 2px solid rgb(82, 77, 74);
-        border-radius: 10px;
-        -webkit-box-shadow: 5px 5px 5px -5px rgba(146, 98, 53, 0.6);
-        -moz-box-shadow: 5px 5px 5px -5px rgba(146, 98, 53, 0.6);
-        box-shadow: 7px 7px 7px -5px rgba(146, 98, 53, 0.6);
+    border-radius: 10px;
+    line-height: 160px;
+    margin: 30px auto;
+    justify-content: center;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    // width: 300px;
 
-        .card_name {
-            height: 60px;
-            text-align: left;
-        }
+.card{
+    width: 300px;
+    border: 2px solid rgb(82, 77, 74);
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(146, 98, 53, 0.6);
+    -moz-box-shadow: 5px 5px 5px -5px rgba(146, 98, 53, 0.6);
+    box-shadow: 7px 7px 7px -5px rgba(146, 98, 53, 0.6);
+}
+    .card_name {
+        height: 60px;
+        text-align: left;
+    }
 
-        .card_marker {
-            display: flex;
-            align-items: start;
+    .card_marker {
+        display: flex;
+        align-items: start;
 
-            .icons {
-                margin: 2px 4px;
-            }
-        }
-
-        .card_img {
-            width: 296px;
-            height: 220px;
-        }
-
-        .icons_like {
-            justify-content: end;
-            display: flex;
-            gap: 10px;
-
+        .icons {
+            margin: 2px 4px;
         }
     }
+
+    .card_img {
+        width: 296px;
+        height: 220px;
+    }
+
+    .icons_like {
+        justify-content: end;
+        display: flex;
+        gap: 10px;
+
+    }
 }
+
 
 .dropdown {
     width: 400px;

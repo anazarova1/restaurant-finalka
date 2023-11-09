@@ -31,14 +31,14 @@ export const CardBanquets = (props) => {
     const handleCancel = () => {
         setOpen(false);
     };
-    return(<>
-         <div className='container'>
+    return (<>
+        <div className='container'>
                 <div className={styles.cards}>
                     <div className={styles.cardContainer}>
                         <Card className={styles.card}
                             hoverable cover={<img className={styles.card_img} src={props.image} alt="Картинка" />}>
                             <h2 className={styles.props_name}>{props.name}</h2>
-                            <div className={styles.card_marker}> 
+                            <div className={styles.card_marker}>
                                 <div >
                                     <LiaMapMarkerSolid></LiaMapMarkerSolid>
                                 </div>
@@ -46,7 +46,7 @@ export const CardBanquets = (props) => {
                             </div>
                             <div className={styles.card_marker}>
                                 <div>
-                                <MdPeopleOutline className={styles.card_icons}></MdPeopleOutline>
+                                    <MdPeopleOutline className={styles.card_icons}></MdPeopleOutline>
                                 </div>
                                 <h2>{props.peoples}</h2>
                             </div>
@@ -86,7 +86,7 @@ export const CardBanquets = (props) => {
 
                                         dateFormat="MMMM d, yyyy h:mm aa" />
                                     {/* <BsPeople></BsPeople> */}
-                                    <input type='number' placeholder= 'Количество гостей' />
+                                    <input type='number' placeholder='Количество гостей' />
                                     <input type='name' placeholder='Имя' />
                                     <input type='name' placeholder='Фамилия' />
                                     <input type='text' placeholder='Телефон' />
@@ -97,8 +97,10 @@ export const CardBanquets = (props) => {
                             </Modal>
                         </Card>
                     </div>
+
                 </div>
-            </div>
+
+        </div>
     </>
     )
 }

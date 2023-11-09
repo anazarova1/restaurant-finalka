@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import { getRecipes } from "../actions";
 
 const initialState = {
-    repices: {}
+    recipes: []
 }
 
 export const recipesSlice = createSlice({
@@ -11,7 +11,8 @@ export const recipesSlice = createSlice({
     reducers: {},
     extraReducers: {
         [getRecipes.fulfilled]: (state, action) => {
-            state.repices = action.payload;
+
+            state.recipes = action.payload;
         },
         [getRecipes.rejected]: (state, action) => {
             console.log("error")

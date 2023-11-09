@@ -1,4 +1,16 @@
-.cards{
-    margin: 0;
-    margin-bottom: 100px;
+
+.banquet_page{
+    width: 84%;
+    display: flex;
+    justify-content: center;
+align-items: center;
+    margin: 0 auto;
+    gap: 40px;
+    .cards{
+        margin: 0;
+        margin-bottom: 100px;
+    }
+    .banquet_sale{
+        border: 1px solid;
+    }
 }

@@ -9,7 +9,8 @@ export const Banquets = () => {
     return (
         <>
         <div className="container">
-            <div className={styles.cards}>
+        <div className={styles.banquet_page}>
+        <div className={styles.cards}>
             <CardBanquets
                 image={image}
                 name='Ala-Too'
@@ -24,7 +25,9 @@ export const Banquets = () => {
                    peoples=" Вместимость до 400 человек"
                    check="средний чек на 1 персону от 1900 с"
             />
-            </div>
+            </div> 
+            <div className={styles.banquet_sale}><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis nostrum mollitia incidunt neque iure amet pariatur dolor modi eligendi omnis eveniet illo quod, ex debitis accusamus est impedit sequi et.</p></div>
+        </div>
         </div>
         </>
     )

@@ -9,22 +9,7 @@ import {LiaMapMarkerSolid} from "react-icons/lia"
 
 export const Header = () => {
 
-  const dispatch = useDispatch();
   const userInfo  = useSelector((state) => state.users);
-  const navigate = useNavigate();
-
-  const logOut = () => {
-    localStorage.removeItem("token");
-    navigate("/register");
-  };
-
-
-
-
-
-
-
-
   return (
     <header className={styles.header}>
       <div className="container">
@@ -38,10 +23,12 @@ export const Header = () => {
           </div>
           <nav className={styles.header__nav}>
             <ul className={styles.header__list}>
+            <li className={styles.header__item}><Link className={styles.header__link} to="/home">Главная</Link></li>
               <li className={styles.header__item}><Link className={styles.header__link} to="/restaurants">Рестораны</Link></li>
               <li className={styles.header__item}><Link className={styles.header__link} to="/banquets">Банкеты</Link></li>
-              <li className={styles.header__item}><Link className={styles.header__link} to="/news">Новости</Link></li>
               <li className={styles.header__item}><Link className={styles.header__link} to="/recipes">Рецепты</Link></li>
+              <li className={styles.header__item}><Link className={styles.header__link} to="/reserv">Ваши брони</Link></li>
+
             </ul>
           </nav>
 
