@@ -1,13 +1,30 @@
-.card_main {
-  width: 84%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  margin: 0 auto;
-}
 
-.card_recipes {
-  margin: 0 auto;
-  gap: 20px;
+.main_content{
+  margin-top: 20px;
+  .main_content_resto{
+    margin: 0 auto;
+  }
+.page_title{
+  color: rgb(79, 79, 126);
+  text-decoration: underline;
+  margin-left: 100px;
+  font-weight: 600;
+  font-size: 30px;
+  &:hover{
+    color: #FF6300;
+    transition: 0.5s;
+  }
+}
+  .card_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 84%;
+  }
+  
+  .card_recipes {
+    margin: 0 auto;
+    gap: 20px;
+  }
 }

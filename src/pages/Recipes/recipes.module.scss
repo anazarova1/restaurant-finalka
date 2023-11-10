@@ -36,7 +36,7 @@
         }
 
         .card_img {
-            width: 296px;
+            width: 297px;
             height: 220px;
         }
 
@@ -56,6 +56,6 @@
 .modal {
     height: 100%;
     position: absolute;
-    background-color: black;
+    justify-content: center;
     z-index: 12;
 }

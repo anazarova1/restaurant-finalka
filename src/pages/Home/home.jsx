@@ -3,9 +3,7 @@ import styles from "./home.module.scss"
 export const Home = () => {
     return(
         <>
-        <Main
-        
-        />
+        <Main/>
         </>
     )
 }

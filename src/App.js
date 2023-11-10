@@ -10,7 +10,8 @@ import { Main } from './components/Main/main';
 import { Search } from './components/Search/Search';
 import { Home } from './pages/Home';
 import { Reserv } from './pages/Reserv';
-
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
 
         </Route>
       </Routes>
+      <ToastContainer />
     </>
 
 

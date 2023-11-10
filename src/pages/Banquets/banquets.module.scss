@@ -2,15 +2,39 @@
 .banquet_page{
     width: 84%;
     display: flex;
-    justify-content: center;
-align-items: center;
+    flex-direction: column;
+    text-align: center;
     margin: 0 auto;
+
+  .title{
+    color: rgb(79, 79, 126);
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 20px;
+  }
+  .banquet_page_content{
+    display: flex;
+    justify-content: center;
     gap: 40px;
     .cards{
-        margin: 0;
-        margin-bottom: 100px;
+display: flex;
+flex-direction: column;
     }
     .banquet_sale{
-        border: 1px solid;
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        h2{
+            padding: 20px;
+            color: rgb(79, 79, 126);
+
+        }
+        .banquet_page_link{
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+        }
     }
+  }
+ 
 }

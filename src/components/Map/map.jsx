@@ -4,14 +4,19 @@ import styles from './map.module.scss'
 import { HiOutlineLocationMarker } from "react-icons/hi"
 
 let arrlatlng = [
-    { lng: 42.767246, lat: 74.573006, title: "doni" },
-    { lat: 42.8796540, lng: 74.6030155, title: "doni"},
+    {  lat:42.879117,lng:  74.60689,title: "Frunze Restaurant" },
+    { lat: 42.876283, lng: 74.5955, title: "Cyclone" },
+    { lat: 42.871496, lng:   74.604076, title: "Navigator" },
+    { lat: 42.822756, lng: 74.615459  , title: "Usta Restaurant" },
+    { lat: 42.818235, lng: 74.623956  , title: "Barashek" },
+    { lat: 42.869262, lng:  74.603843 , title: "Bar 12" },
+    { lat:42.854652 , lng:  74.637487 , title: "Dasmia" },
+    { lat:42.873154 , lng:  74.60274 , title: "Niko" },
+    { lat: 42.872879, lng:  74.602715 , title: "Nar" },
 
-    { lat: 42.767246, lng: 74.573006, title: "doni" },
 
 ]
 export const MyMapComponent = () => {
-
     const renderMarkers = (map, maps) => {
         return arrlatlng.map(({ lat, lng, title }) => {
             return new maps.Marker({
@@ -29,7 +34,6 @@ export const MyMapComponent = () => {
     }
     const LocationPin = ({ text }) => (
         <div className="pin">
-
             <p className="pin-text">{text}</p>
         </div>
     )
@@ -38,7 +42,7 @@ export const MyMapComponent = () => {
             <GoogleMapReact
                 bootstrapURLKeys={{ key: 'AIzaSyCKJ6oxE1eTBTjGfrIInoIev0x4F2J13WU' }}
                 defaultCenter={location}
-                defaultZoom={17}
+                defaultZoom={13}
                 yesIWantToUseGoogleMapApiInternals
                 onGoogleApiLoaded={({ map, maps }) => renderMarkers(map, maps)}
             >

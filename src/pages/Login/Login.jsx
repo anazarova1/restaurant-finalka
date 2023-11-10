@@ -32,13 +32,10 @@ export const Login = () => {
             <div className={styles.form_styles_row}>
               <div className={styles.transparent}>
               <div className={styles.form_img}>
-            {/* <video autoPlay loop video>
-        <source src={video} type="video" />
-      </video> */}
 <img className={styles.img} src={img_2} alt='img'/>
                 </div>
                 <div className={styles.form_style}>
-                <input type='username' placeholder='username' {...register('username')} />
+                <input type='email' placeholder='email' {...register('email')} />
                 <div className={styles.flex_row}>
                 <input type={eye ? 'text' : 'password'}
                     placeholder='password'{...register('password')}

@@ -1,15 +1,8 @@
 .cards {
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: auto;
-    align-items: center;
-    height: 530px;
-    z-index: 20;
-    border-radius: 10px;
-    line-height: 160px;
-    width: 84%;
+    display: flex;
+    flex-direction: column;
 
+    margin-bottom: 20px;
     .card_button_flex {
         display: flex;
         align-self: center;
@@ -37,18 +30,29 @@
     }
 
     .cardContainer {
+        width: 88%;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        margin: auto;
+        align-items: center;
+        z-index: 20;
+        border-radius: 10px;
+        line-height: 160px;
+    }
+
+    .card {
         width: 300px;
         border: 2px solid rgb(82, 77, 74);
         border-radius: 10px;
         -webkit-box-shadow: 5px 5px 5px -5px rgba(146, 98, 53, 0.6);
         -moz-box-shadow: 5px 5px 5px -5px rgba(146, 98, 53, 0.6);
         box-shadow: 7px 7px 7px -5px rgba(146, 98, 53, 0.6);
-
-        
     }
 
     .card_img {
-        width: 296px;
+        width: 297px;
         height: 220px;
     }
 
@@ -77,9 +81,10 @@
     display: flex;
 
 }
-.submit_button{
+
+.submit_button {
     border: none;
-    align-self:flex-end;
+    align-self: flex-end;
     padding: 10px 35px;
     border-radius: 5px;
     background-color: rgb(255, 99, 0);
@@ -90,6 +95,7 @@
     color: white;
     font-weight: 500;
     font-size: 20px;
+
     &:hover {
         border: none;
         background-color: rgb(105, 192, 65);

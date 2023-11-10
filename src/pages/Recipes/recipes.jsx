@@ -18,9 +18,7 @@ export const Recipes = (props) => {
         dispatch(getRecipes())
     }, [])
 
-    const showModal = ()=> {
-        setIsHidden(!isHidden)
-    }
+
 
     return (
         <>
@@ -30,7 +28,7 @@ export const Recipes = (props) => {
                         {
                             recipes?.map((reciep) => (
                                 <Card className={styles.card}
-                                    hoverable cover={<img className={styles.card_img} src={props.image} alt="Картинка" />}>
+                                    hoverable cover={<img className={styles.card_img} src={reciep.image} alt="Картинка" />}>
                                     <h2 className={styles.card_name}>{reciep.name}</h2>
                                     <div className={styles.card_marker}>
                                         <div className={styles.icons}>
@@ -77,18 +75,6 @@ export const Recipes = (props) => {
                             ))
                         }
                     </div>
-                    <div className={styles.add_recipes}>
-    <button onClick={showModal}>hi</button>
-
-    {
-
-        isHidden ? (
-            <div className={styles.modal}>
-              <CardRecipes/>
-            </div>
-        ) : null
-    }
-</div>
                 </div>
             </div>
         </>
