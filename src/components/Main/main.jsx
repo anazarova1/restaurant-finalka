@@ -5,6 +5,7 @@ import { Slider } from "../Slider"
 import { CardBanquets } from "../cardBanquets/cardBanquets";
 import styles from "./main.module.scss"
 import { CardRestaurant } from "../CardRestaurant";
+import { Search } from "../Search/Search";
 export const Main = () => {
 
   const imageb1 = require('../../assets/banquets/alatoo.jpg')
@@ -16,16 +17,16 @@ export const Main = () => {
         <div className={styles.main_content}>
           <div className={styles.main_content_resto}>
             <div>
-            <li className={styles.header__item}><Link className={styles.page_title} to="/restaurants">Рестораны</Link></li>
-              <div className={styles.card_main}>
-            <CardRestaurant/>
+              <li className={styles.header__item}><Link className={styles.page_title} to="/restaurants">Рестораны</Link></li>
+              <div className={styles.card_resto}>
+                <CardRestaurant />
               </div>
             </div>
           </div>
           <div className={styles.main_content_banquet}>
-          <li className={styles.header__item}><Link className={styles.page_title} to="/banquets">Банкеты</Link></li>
+            <li className={styles.header__item}><Link className={styles.page_title} to="/banquets">Банкеты</Link></li>
             <div className={styles.card_main}>
-              <CardBanquets 
+              <CardBanquets
                 image={imageb1}
                 name='Ala-Too'
                 address="Малдыбаева, 54/1​"
@@ -42,15 +43,16 @@ export const Main = () => {
             </div>
           </div>
           <div className={styles.main_content_recipes}>
-          <li className={styles.header__item}><Link className={styles.page_title} to="/recipes">Рецепты</Link></li>
+            <li className={styles.header__item}><Link className={styles.page_title} to="/recipes">Рецепты</Link></li>
 
-<div  className={styles.card_recipes}>
-<CardRecipes className={styles.card_recipes_content}>
-  
-</CardRecipes>
-</div>
+            <div className={styles.card_recipes}>
+              <div className={styles.card_recipes_content}>
+                <CardRecipes/>
+
+              </div>
+            </div>
           </div>
-          <Slider/>
+          <Slider />
         </div>
       </div>
     </>

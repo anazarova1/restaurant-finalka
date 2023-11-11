@@ -18,57 +18,61 @@ export const CardRecipes = (props) => {
     return (
         <>
             <div className="container">
-                    <div className={styles.card_recipes}>
-                        {
-                            recipes?.map((reciep) => (
-                                <Card className={styles.card}
-                                    hoverable cover={<img className={styles.card_img} src={props.image} alt="Картинка" />}>
-                                    <h2 className={styles.card_name}>{reciep.name}</h2>
-                                    <div className={styles.card_marker}>
-                                        <div className={styles.icons}>
-                                            <FcList></FcList>
-                                        </div>
-                                        <div>
-                                            <h3>Список ингридиентов:</h3>
-                                            <p>{reciep.ingredients}</p>
+                <div className={styles.card_recipes}>
+                    {
+                        recipes?.map((reciep) => (
+                            <Card className={styles.card} key={reciep.id}
+                                hoverable cover={<img className={styles.card_img} src={reciep.image} alt="Картинка" />}>
+                                <h2 className={styles.card_name}>{reciep.name}</h2>
+                                <div className={styles.card_marker}>
+                                    <div className={styles.icons}>
+                                        <FcList></FcList>
+                                    </div>
+                                    <div>
+                                        <h3>Список ингридиентов:</h3>
+                                        <p>{reciep.ingredients}</p>
+                                    </div>
+                                </div>
+                                <div className={styles.card_marker}>
+                                    <div className={styles.icons}>
+                                        <GiCook></GiCook>
+                                    </div>
+                                    <div>
+                                        <div className={styles.dropdown}>
+                                            <Dropdown
+                                                menu={{
+                                                    items: [{
+                                                        label: <a href="https://www.antgroup.com">
+                                                            <p>
+                                                                {reciep.cooking}
+                                                            </p>
+                                                        </a>,
+                                                        key: '0',
+                                                    }],
+                                                }}
+                                                trigger={['click']}
+                                            >
+                                                <a className={styles.dropdown} onClick={(e) => e.preventDefault()}>
+                                                    <Space>
+                                                        Способ приготовления:                                           <DownOutlined />
+                                                    </Space>
+                                                </a>
+                                            </Dropdown>
                                         </div>
                                     </div>
-                                    <div className={styles.card_marker}>
-                                        <div className={styles.icons}>
-                                            <GiCook></GiCook>
-                                        </div>
-                                        <div>
-                                            <div className={styles.dropdown}>
-                                                <Dropdown
-                                                    menu={{
-                                                        items: [{
-                                                            label: <a href="https://www.antgroup.com">
-                                                                <p>
-                                                                    {reciep.cooking}
-                                                                </p>
-                                                            </a>,
-                                                            key: '0',
-                                                        }],
-                                                    }}
-                                                    trigger={['click']}
-                                                >
-                                                    <a className={styles.dropdown} onClick={(e) => e.preventDefault()}>
-                                                        <Space>
-                                                            Способ приготовления:                                           <DownOutlined />
-                                                        </Space>
-                                                    </a>
-                                                </Dropdown>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className={styles.icons_like}>
+                                </div>
+                                <div className={styles.icons_like}>
+                                    <button>
                                         <AiOutlineLike></AiOutlineLike>
+                                    </button>
+                                    <button>
                                         <AiOutlineDislike></AiOutlineDislike>
-                                    </div>
-                                </Card>
-                            ))
-                        }
-                   
+                                    </button>
+                                </div>
+                            </Card>
+                        ))
+                    }
+
 
                 </div>
             </div>

@@ -1,52 +1,10 @@
 {
   "users": [
     {
-      "email": "qwe@gmail.com",
-      "password": "$2a$10$brk6LDbXXxQQPzqP.LS2QewQBDcLOWOwFCg1fwSIBnrrv8JfLccuO",
-      "username": "Aidana Nazarova ",
-      "id": 1
-    },
-    {
-      "email": "testuser1@gmail.com",
-      "password": "$2a$10$bC4cJd.Qv/PpsuHz2Mnl.OpF6YsDrAfpb4qOASwaboxm0z3aEpIoC",
-      "username": "aidana",
-      "id": 2
-    },
-    {
-      "email": "aidana@test",
-      "password": "$2a$10$.Gqj/YIj0SCv.bdz7oY.2uuLF6MS9uyMqpD/YNoukQ7bpbYXeMEve",
-      "username": "aidanatest",
-      "id": 3
-    },
-    {
-      "email": "test@123",
-      "password": "$2a$10$XHfkYXcbRksQ5EBNOPtf5eURD80K.LLjWVcZgj7xo1nQGEUZf9YDi",
-      "username": "testuser1",
-      "id": 4
-    },
-    {
-      "email": "aidana123@mail.ru",
-      "password": "$2a$10$eFFayU4KZl6OqODWrkJpQO6R2QIsLU1MGRPDwyakLMiUA3bbcB4Te",
-      "username": "aidanaaitikeeva",
-      "id": 5
-    },
-    {
-      "email": "123@aidana",
-      "password": "$2a$10$.VJV9.BRW.1lZTPAxqZe7.sPxEWL7LVuguAdvHX9rgpWZfoSxdfq.",
-      "username": "123aidana",
-      "id": 6
-    },
-    {
-      "email": "test123@aidana.com",
-      "password": "$2a$10$psdg1ajQQSSH7GoEgqwo7.za2hCjG6FQ258vF26PMBogIU.htheLO",
-      "username": "aidana1",
-      "id": 7
-    },
-    {
-      "email": "alina@mail.ru",
-      "password": "$2a$10$lzV9xLUhyd/EC1rWgRO1puU//.4rmtBGWFbNfOdNSy9OlgcyN5iOK",
-      "username": "aidanaN",
-      "id": 8
+      "email": "aidana@a",
+      "password": "$2a$10$K/xT6UAGKpUqE6yf5AgO.uaUwN2Wd5FHB5KU4TUdRlqatHqUCBpX6",
+      "username": "aidana11",
+      "id": 9
     }
   ],
   "recipes": [
@@ -74,153 +32,15 @@
   ],
   "reserv": [
     {
-      "count": "123",
-      "name": "qawdawd",
-      "surname": "awda",
-      "number": "awdawd",
-      "email": "awd@gmail.com",
-      "id": 1
-    },
-    {
-      "count": "2212121",
-      "name": "test",
-      "surname": "ggerterter",
-      "number": "ertertert",
-      "email": "",
-      "id": 2
-    },
-    {
-      "count": "",
-      "name": "fdsfsdf",
-      "surname": "",
-      "number": "",
-      "email": "",
-      "id": 3
-    },
-    {
-      "count": "4",
-      "name": "aidana's ",
-      "surname": "aitikeeva",
-      "number": "0700000000",
-      "email": "dana.iti293@gmail.com",
-      "id": 4
-    },
-    {
-      "count": "4",
-      "name": "aidana's ",
-      "surname": "aitikeeva",
-      "number": "0700000000",
-      "email": "dana.iti293@gmail.com",
-      "id": 5
-    },
-    {
-      "count": "4",
-      "name": "aidana's ",
-      "surname": "aitikeeva",
-      "number": "0700000000",
-      "email": "dana.iti293@gmail.com",
-      "id": 6
-    },
-    {
-      "count": "8",
-      "name": "1111",
-      "surname": "aitikeeva",
-      "number": "",
-      "id": 7
-    },
-    {
-      "count": "8",
-      "name": "1111",
-      "surname": "aitikeeva",
-      "number": "",
-      "id": 8
-    },
-    {
-      "count": "8",
-      "name": "1111",
-      "surname": "aitikeeva",
-      "number": "",
-      "id": 9
-    },
-    {
-      "count": "8",
-      "name": "1111",
-      "surname": "aitikeeva",
-      "number": "",
-      "id": 10
-    },
-    {
-      "count": "101",
-      "name": "test101",
-      "surname": "nazarova",
-      "number": "",
-      "id": 11
-    },
-    {
-      "count": "4",
-      "name": "Frunze",
-      "surname": "",
-      "number": "fff",
-      "id": 12
-    },
-    {
-      "count": "4",
-      "name": "Frunze",
-      "surname": "",
-      "number": "fff",
-      "id": 13
-    },
-    {
-      "count": "111",
-      "name": "Usta Turkish ",
-      "surname": "rdxrdxr",
-      "number": "23456",
-      "id": 14
-    },
-    {
-      "count": "123123",
-      "name": "Cyclone",
-      "surname": "awdawd",
-      "number": "123123123123",
-      "id": 15
-    },
-    {
-      "count": "123",
-      "name": "Frunze",
-      "surname": "QAWD",
-      "number": "1231",
-      "address": 123123,
-      "id": 16
-    },
-    {
-      "count": "123123",
-      "name": "Cyclone",
-      "surname": "zwadawd",
-      "number": "123",
-      "address": "​​Проспект Чуй, 136​",
-      "id": 17
-    },
-    {
-      "count": "234",
-      "name": "Ugolөk",
-      "surname": "sef",
-      "number": "2423",
-      "id": 18
-    },
-    {
       "count": "",
       "name": "Ugolөk",
       "surname": "",
       "number": "",
-      "id": 19
-    },
-    {
-      "count": "123",
-      "name": "Ugolөk",
-      "surname": "awd",
-      "number": "123",
+      "ema": "",
+      "email": "aidana@a",
       "address": "​Орозбекова, 51​​​​​",
-      "id": 20
+      "person_id": "aidana@a",
+      "id": 27
     }
   ],
   "newRecipes": [
@@ -228,74 +48,92 @@
   ],
   "restaurants": [
     {
+      "id": "1",
       "image": "./restoran/01.jpg",
       "name": "Frunze",
       "address": "​Абдумомунова, 220а​​",
-      "points": "3,9",
+      "plus": "2",
+      "minus": "0",
       "check": "Средний чек 3500 с",
       "kitchen": " Восточная кухня ​Халяльная кухня"
     },
     {
+      "id": "2",
       "image": "./restoran/02.jpg",
-      "name": " Niko",
+      "name": "Niko",
       "address": "​Орозбекова, 51​​",
-      "points": "4,7",
+      "plus": "0",
+      "minus": "0",
       "check": "Средний чек 1800 с",
       "kitchen": " Восточная кухня ​Халяльная кухня"
     },
     {
+      "id": "3",
       "image": "./restoran/03.jpg",
       "name": "Cyclone",
       "address": "​​Проспект Чуй, 136​​",
-      "points": "4,2",
+      "plus": "0",
+      "minus": "0",
       "check": "Средний чек 1100 с",
       "kitchen": " Восточная кухня ​Халяльная кухня"
     },
     {
+      "id": "4",
       "image": "./restoran/04.jpg",
       "name": "Navigator",
       "address": "​​Московская, 103​",
-      "points": "3,7",
+      "plus": "0",
+      "minus": "0",
       "check": "Средний чек 1500с",
       "kitchen": " Восточная кухня ​Халяльная кухня"
     },
     {
+      "id": "5",
       "image": "./restoran/05.jpg",
       "name": "Барвиха Resto&Bar",
       "address": "​Орозбекова 62​​",
-      "points": "4",
+      "plus": "1",
+      "minus": "0",
       "check": "Средний чек 1700с",
       "kitchen": " Восточная кухня ​Халяльная кухня"
     },
     {
+      "id": "6",
       "image": "./restoran/06.jpg",
       "name": "Usta Turkish ",
       "address": "​​Токомбаева, 25​",
-      "points": "3,6",
+      "plus": "1",
+      "minus": "0",
       "check": "Средний чек 2500с",
       "kitchen": " Восточная кухня ​Халяльная кухня"
     },
     {
+      "id": "7",
       "image": "./restoran/07.jpg",
       "name": "Nar",
       "address": "ул.Орозбекова, 51​​",
-      "points": "3,7",
+      "plus": "0",
+      "minus": "0",
       "check": "Средний чек 1800с",
       "kitchen": " Восточная кухня ​Халяльная кухня"
     },
     {
+      "id": "8",
       "image": "./restoran/08.jpg",
       "name": "Barashek",
       "address": "​Микрорайон Асанбай, 78Б​​",
-      "points": "4,2",
+      "plus": "0",
+      "minus": "0",
       "check": "Средний чек 3500с",
       "kitchen": " Восточная кухня ​Халяльная кухня"
     },
     {
+      "id": "9",
       "image": "./restoran/09.jpg",
       "name": "Ugolөk",
       "address": "​Орозбекова, 51​​​​​",
-      "points": "4,5",
+      "plus": "0",
+      "minus": "0",
       "check": "Средний чек 1500с",
       "kitchen": " Восточная кухня ​Халяльная кухня"
     }

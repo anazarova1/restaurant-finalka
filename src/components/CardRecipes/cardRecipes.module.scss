@@ -6,12 +6,12 @@
     margin: 30px auto;
     justify-content: center;
     display: flex;
-    gap: 50px;
+    gap: 40px;
     align-items: center;
     // width: 300px;
 
 .card{
-    width: 300px;
+    width: 308px;
     border: 2px solid rgb(82, 77, 74);
     border-radius: 10px;
     -webkit-box-shadow: 5px 5px 5px -5px rgba(146, 98, 53, 0.6);
@@ -33,7 +33,7 @@
     }
 
     .card_img {
-        width: 296px;
+        width: 305px;
         height: 220px;
     }
 
@@ -41,7 +41,15 @@
         justify-content: end;
         display: flex;
         gap: 10px;
-
+        button{
+            border: 1px solid green;
+            border-radius: 4px;
+            padding: 5px;
+            margin: 0 5px;
+            &:hover{
+                background-color: rgb(149, 223, 149);
+            }
+        }
     }
 }
 

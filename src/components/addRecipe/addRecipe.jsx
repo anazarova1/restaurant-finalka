@@ -7,7 +7,7 @@ export const addRecipe = () => {
 
                 <Card className={styles.card}
                     hoverable cover={<img className={styles.card_img} src={props.image} alt="Картинка" />}>
-                        <input className={styles.card_name}>{props.name}</input>
+                    <input className={styles.card_name}>{props.name}</input>
                     <div className={styles.card_marker}>
                         <div className={styles.icons}>
                             <FcList></FcList>
@@ -27,7 +27,7 @@ export const addRecipe = () => {
                                     menu={{
                                         items: [{
                                             label: <a href="https://www.antgroup.com">
-                                                    <input>{reciep.cooking}</input>
+                                                <input>{reciep.cooking}</input>
                                             </a>,
                                             key: '0',
                                         }],
@@ -43,10 +43,14 @@ export const addRecipe = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={styles.icons_like}>
-                        <AiOutlineLike></AiOutlineLike>
-                        <AiOutlineDislike></AiOutlineDislike>
-                    </div>
+                    {/* <div className={styles.icons_like}>
+                        <button>
+                            <AiOutlineLike></AiOutlineLike>
+                        </button>
+                        <button>
+                            <AiOutlineDislike></AiOutlineDislike>
+                        </button>
+                    </div> */}
                 </Card>
 
 

@@ -4,6 +4,7 @@ import { Card } from 'antd';
 import { LiaMapMarkerSolid } from "react-icons/lia"
 import { MdPeopleOutline } from "react-icons/md"
 import { PiCurrencyCircleDollarDuotone } from "react-icons/pi"
+import { AiOutlineLike, AiOutlineDislike } from "react-icons/ai"
 import { GiCook } from "react-icons/gi"
 import { useState } from 'react';
 import { Button, Modal } from 'antd';
@@ -56,6 +57,16 @@ export const CardBanquets = (props) => {
                                 </div>
                                 <h2>{props.check}</h2>
                             </div>
+                            <div className={styles.card_marker}>
+                                        <div className={styles.icons_like}>
+                                            <button>
+                                                <AiOutlineLike></AiOutlineLike>
+                                            </button>
+                                            <button>
+                                                <AiOutlineDislike></AiOutlineDislike>
+                                            </button>
+                                        </div>
+                                    </div>
                             <div className={styles.card_button_flex}>
                                 <button className={styles.card_button} type="primary" onClick={showModal}
                                 >Забронировать

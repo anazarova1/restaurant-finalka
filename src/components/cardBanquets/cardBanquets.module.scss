@@ -78,6 +78,25 @@
 .card_marker {
     display: flex;
     align-self: self-end;
+    
+        display: flex;
+        .icons_like{
+            align-items: center;
+            display: flex;
+            margin: 10px 0;
+            gap: 15px;
+          
+            button{
+                border: 1px solid green;
+                border-radius: 4px;
+                padding: 5px;
+                &:hover{
+                    background-color: rgb(149, 223, 149);
+                }
+            }
+        
+    
+    }
 
     h2 {
         text-align: end;
